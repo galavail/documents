@@ -1,0 +1,40 @@
+---
+title: Búsqueda por URL
+description: Configure la URL de búsqueda
+---
+
+Cruise Booking Platform (eCommerce) de GalAvail y tiene como fin facilitar la integración del motor de búsqueda en sus sitios web.
+El buscador permite personalizar consultas mediante parámetros en la URL y mostrar disponibilidad actualizada directamente desde el inventario centralizado de cruceros.
+
+
+
+## Parámetros de la URL de Búsqueda
+
+La URL de búsqueda está compuesta por 15 parámetros que deben ser configurados según las especificaciones de cada uno. El formato estándar de la URL es:
+
+```
+https://agencies.galavail.com/companyName/search/adults/children/months/year/priceFrom/priceTo/cruiseType/cruiseLength/cruiseName/rateType/sortBy/cruiseCategories
+```
+
+> **Nota:** Si el parámetro “Rate Type” es “Charter Only”, la URL debe terminar con `/charter`.
+
+### Tabla de Parámetros
+
+| Orden | Componente URL      | Descripción                        |
+|-------|---------------------|------------------------------------|
+| 1     | Base URL            | URL principal                      |
+| 2     | companyName         | Nombre de la compañía              |
+| 3     | search              | Palabra reservada                  |
+| 4     | adults              | Número de adultos                  |
+| 5     | children            | Número de niños                    |
+| 6     | months              | Mes(es) de viaje                   |
+| 7     | year                | Año de viaje                       |
+| 8     | priceFrom           | Precio mínimo por persona          |
+| 9     | priceTo             | Precio máximo por persona          |
+| 10    | cruiseType          | Tipo de crucero                    |
+| 11    | cruiseLength        | Duración del viaje (días)          |
+| 12    | cruiseName          | Nombre del crucero                 |
+| 13    | rateType            | Tipo de tarifa                     |
+| 14    | sortBy              | Filtro de visualización            |
+| 15    | cruiseCategories    | Categoría del crucero              |
+

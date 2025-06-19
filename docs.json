@@ -1,0 +1,21 @@
+{
+  "name": "Guia de Integración",
+  "description": "My documentation site",
+  "sidebar": [
+  {
+    "group": "Getting Started",
+    "pages": [
+      {
+        "title": "Búsqueda por URL",
+        "href": "/",
+        "icon": "search"
+      },
+      {
+        "title": "Next Steps",
+        "href": "/next-steps",
+        "icon": "arrow-right"
+      }
+    ]
+  }
+]
+}
