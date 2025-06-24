@@ -1,6 +1,6 @@
 ---
 title: Búsqueda por URL
-description: Configure la URL de búsqueda
+description: Configurar URL
 ---
 
 Cruise Booking Platform (eCommerce) de GalAvail y tiene como fin facilitar la integración del motor de búsqueda en sus sitios web.
@@ -22,19 +22,94 @@ https://agencies.galavail.com/companyName/search/adults/children/months/year/pri
 
 | Orden | Componente URL      | Descripción                        |
 |-------|---------------------|------------------------------------|
-| 1     | Base URL            | URL principal                      |
-| 2     | companyName         | Nombre de la compañía              |
-| 3     | search              | Palabra reservada                  |
-| 4     | adults              | Número de adultos                  |
-| 5     | children            | Número de niños                    |
-| 6     | months              | Mes(es) de viaje                   |
-| 7     | year                | Año de viaje                       |
-| 8     | priceFrom           | Precio mínimo por persona          |
-| 9     | priceTo             | Precio máximo por persona          |
-| 10    | cruiseType          | Tipo de crucero                    |
-| 11    | cruiseLength        | Duración del viaje (días)          |
-| 12    | cruiseName          | Nombre del crucero                 |
-| 13    | rateType            | Tipo de tarifa                     |
-| 14    | sortBy              | Filtro de visualización            |
-| 15    | cruiseCategories    | Categoría del crucero              |
+| 1     | baseURL             | Principal URL                      |
+| 2     | companyName         | Name of the company                |
+| 3     | search              | Search parameter                   |
+| 4     | adults              | Number of adults                   |
+| 5     | children            | Number of children                 |
+| 6     | months              | Travel month                       |
+| 7     | year                | Travel year                        |
+| 8     | priceFrom           | Price from                         |
+| 9     | priceTo             | Price up                           |
+| 10    | cruiseType          | Type of cruise                     |
+| 11    | cruiseLength        | Tour duration                      |
+| 12    | cruiseName          | Cruise name                        |
+| 13    | rateType            | Rate type                          |
+| 14    | sortBy              | Sort by                            |
+| 15    | cruiseCategories    | Cruise category                    |
+
+### Principal URL
+
+Url principal del eCommerce de Agencias
+
+```
+https//agencies.galavail.com 
+
+```
+<Info>Este parámetro no es configurable</Info>
+
+
+### Name of the company
+
+Nombre de la compania proporcionado por Galavail
+
+```
+companyName
+```
+<Info>Este parámetro es único por cliente de la plataforma eCommerce, se debe remplazar la palabra **companyName** por el proporcionado por Galavail.</Info>
+
+### Search parameter
+Conformado por la palabra reservada **search** como parte de la URL.
+```
+search
+```
+<Info>Parámetro no configurable, forma parte de la url principal del eCommerce del cliente</Info>
+
+### Number of adults
+Indica el número de personas adultas que se considere en la búsqueda.
+
+<Card title="Rango de Valores" icon="table-list">
+  El valor permitido es de **1** persona hasta **20** personas.
+
+    | Valor Parámetro   | Descripción               |
+    |------------------ |---------------------------|
+    | 1                 | 1 Persona                 |
+    | 2                 | 2 Personas                |
+    | 3                 | 3 Personas                |
+    | ...               | ..                        |
+    | 20                | 20 Personas               |
+</Card>
+
+
+### Number of children
+
+
+### Travel month
+
+
+### Travel year
+
+
+### Price from
+
+
+### Price up
+
+
+### Type of cruise
+
+
+### Tour duration
+
+
+### Cruise name
+
+
+### Rate type
+
+
+### Sort by
+
+
+### Cruise category
 
