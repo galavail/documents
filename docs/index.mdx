@@ -180,10 +180,57 @@ Para este parámetro se debe considerar los posibles valores:
 
 
 ### Rate type
+Indica el tipo de tarifa
+<Card title="Rango de Valores" icon="table-list">
+Para este parámetro se debe considerar los posibles valores:
+- Un tipo de tarifa específico.Ejem: 1
+- Varios tipos de tarifa, separados por comas. Ejm: 2567,2563
+- Todos los tipos de tarifas. Ejm: 0
 
+    | Valor Parámetro   | Descripción               |
+    |------------------ |---------------------------|
+    | 0                 | Todos                     |
+    | 1                 | Promotions Only           |
+    | 2567              | 2X1                       |
+    | 2563              | % OFF                     |
+    | 2564              | % OFF                     |
+    | 2566              | Super Promo               |
+    | 2565              | Regular Rate              |
+    | 0                 | Charter Only  **(*)**     |
+</Card>
+<Info>(*) Para el tipo de tarifa “Charter Only”, el valor del parámetro es 0 y la url debe terminar con **“/charter”**</Info>
 
 ### Sort by
+Indica el tipo de filtro de visualización
+<Card title="Rango de Valores" icon="table-list">
+  Para este parámetro se debe considerar los siguientes valores:
+
+
+    | Valor Parámetro   | Descripción               |
+    |------------------ |---------------------------|
+    | 1                 | Price (Low to High)       |
+    | 2                 | Price (High to Low)       |
+    | 3                 | Category (2 to 5 starts)  |
+    | 4                 | Category (5 to 2 starts)  |
+
+</Card>
 
 
 ### Cruise category
+Indica la categoría del crucero
+<Card title="Rango de Valores" icon="table-list">
+    Para este parámetro se debe considerar los posibles valores:
+    - Una categoría en específico. **Ejem: 2**
+    - Várias categorias, separados por comas. **Ejm: 3,4,5**
+    - Todos las categorías. **Ejm: 0**
 
+
+    | Valor Parámetro   | Descripción               |
+    |------------------ |---------------------------|
+    | 0                 | Todos                     |
+    | 2                 | Budget                    |
+    | 3                 | Mid Range                 |
+    | 4                 | First Class               |
+    | 5                 | Luxury                    |
+
+</Card>
